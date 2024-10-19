@@ -74,7 +74,7 @@ class SecondScreen extends StatelessWidget {
               ],
             ),
           ),
-          RedButton(text: 'Recalcular', onTap: (){
+          RedButton(text: 'RECALCULAR', onTap: (){
           Navigator.pop(context,);
         }),
       ], 
