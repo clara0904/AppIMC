@@ -57,6 +57,8 @@ class _PrimaryscreenState extends State<Primaryscreen> {
                 title: 'ALTURA',
                 valor: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.baseline,
+                  textBaseline: TextBaseline.alphabetic,
                   children: [
                     Text('$_altura', style: const TextStyle(fontSize: 60.0, fontWeight: FontWeight.w900)), 
                     const Text('cm')],
@@ -96,6 +98,8 @@ class _PrimaryscreenState extends State<Primaryscreen> {
                       title: 'PESO',
                       valor: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.baseline,
+                        textBaseline: TextBaseline.alphabetic,
                         children: [
                           Text('$_peso', style: const TextStyle(fontSize: 60.0, fontWeight: FontWeight.w900)), 
                           const Text('kg')],
@@ -124,6 +128,8 @@ class _PrimaryscreenState extends State<Primaryscreen> {
                       title: 'IDADE',
                       valor: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.baseline,
+                        textBaseline: TextBaseline.alphabetic,
                         children: [
                           Text('$_idade', style: const TextStyle(fontSize: 60.0, fontWeight: FontWeight.w900)), 
                           const Text('anos')],
@@ -153,7 +159,7 @@ class _PrimaryscreenState extends State<Primaryscreen> {
               context,
               MaterialPageRoute(
                 builder: (context) { 
-                  return const SecondScreen();
+                  return SecondScreen(altura: _altura, peso: _peso, idade: _idade,);
                 }
               ),
             );
