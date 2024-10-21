@@ -68,7 +68,7 @@ class _PrimaryscreenState extends State<Primaryscreen> {
                     child: SliderTheme(
                       data: SliderTheme.of(context).copyWith(
                         inactiveTrackColor: Colors.white30,
-                        activeTrackColor: Colors.white,
+                        activeTrackColor: const Color(0xFFEB1555),
                         thumbColor: const Color(0xFFEB1555),
                       ),
                       child: Slider(
