@@ -9,7 +9,9 @@ class Iconcontent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return GestureDetector(
+      onTap: () => {},
+      child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Icon(
@@ -24,6 +26,7 @@ class Iconcontent extends StatelessWidget {
           ),
         ),
       ],
+      ),
     );
 }
 }
